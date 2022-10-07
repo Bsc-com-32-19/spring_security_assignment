@@ -42,6 +42,7 @@ public class UserController {
     }
 
 
+    @Secured({"ROLE_ADMIN", "ROLE_EXECUTIVE", "ROLE_USER"})
     @GetMapping("/me")
     public ResponseEntity<UserModel> getUserDetails(Authentication authentication){
         return userService.getUser(authentication);
