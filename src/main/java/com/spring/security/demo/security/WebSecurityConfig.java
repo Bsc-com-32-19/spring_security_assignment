@@ -24,6 +24,11 @@ import java.util.Collections;
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
 
 @Configuration
+@EnableGlobalMethodSecurity(
+        prePostEnabled = true,
+        securedEnabled = true,
+        jsr250Enabled = true
+)
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class WebSecurityConfig {
