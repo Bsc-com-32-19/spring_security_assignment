@@ -1,5 +1,7 @@
-NOTE:@PostAuthorised was not used because the authorization alwals gets delayed after execution of the target method.
-    @Secured allows OR only that is why l have used @PreAuthoeised to have AND operator.
+NOTE:@PostAuthorised was not used because the authorization alwalys gets delayed after execution of the target method.
+    @Secured allows OR only that is why l have used @PreAuthorised to have AND operator.
+
+
 
 
 This project contains a shell for bootraping the access control assignment. Fork the repository and then clone your forked repo on 
